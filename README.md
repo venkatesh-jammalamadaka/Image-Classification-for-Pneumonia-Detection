@@ -1,8 +1,8 @@
-Pneumonia Detection using Deep Learning
+**Pneumonia Detection using Deep Learning**
 
 A comprehensive binary image classification project for detecting pneumonia from chest X-ray images using Convolutional Neural Networks (CNNs) and Transfer Learning techniques.
 
-Project Overview:
+**Project Overview:**
 
 This project implements and compares multiple deep learning architectures to automatically detect pneumonia from pediatric chest X-rays. The models assist radiologists in faster and more accurate diagnosis by classifying X-ray images as either Normal or Pneumonia.
 Dataset
@@ -12,7 +12,7 @@ Total Images: 5,856 chest X-rays
 Classes: Binary (Normal vs Pneumonia)
 Patient Age: 1-5 years old
 
-Distribution:
+**Distribution:**
 
 Training: 5,216 images (3,875 pneumonia, 1,341 normal)
 Testing: 624 images (390 pneumonia, 234 normal)
@@ -20,7 +20,7 @@ Validation: 16 images (8 pneumonia, 8 normal)
 
 
 
-Key Features
+**Key Features**
 
 Multiple CNN Architectures: Custom CNN, DenseNet121, VGG16, ResNet50, InceptionV3
 Transfer Learning: Two-phase training (freeze → fine-tune) for optimal performance
@@ -30,7 +30,7 @@ Medical-Appropriate Metrics: Sensitivity, specificity, precision, recall, AUC-RO
 Best Practices: Proper train/test isolation, no data leakage, early stopping, learning rate scheduling
 
 
-Key Implementation Details:
+**Key Implementation Details:**
 
 1. Data Preprocessing
 
@@ -62,7 +62,8 @@ weight_pneumonia = 0.67
 Used 'Early Stopping' and 'Learning Rate Reduction'
 
 
-Results Visualization
+**Results Visualization**
+
 The project generates:
 
 Training history plots (loss, accuracy, AUC, recall over epochs)
@@ -70,7 +71,8 @@ ROC curves for each model
 Confusion matrices
 Comparative bar charts across all metrics
 
-Results:
+**Results:**
+
 Winner: DenseNet121 achieved the best balance of sensitivity and specificity with the highest AUC-ROC score.
 
 Sensitivity (Recall): 94.10% means model catches 94% of pneumonia cases
@@ -78,15 +80,15 @@ Specificity: 89.74% means model correctly identifies 90% of normal cases
 23 False Negatives: Missed pneumonia cases (most critical error)
 24 False Positives: Unnecessary follow-ups (less critical)
 
-Improvements Over Baseline
+**Improvements Over Baseline**
 
-Fixed data leakage from original implementation
-Proper two-phase transfer learning (20% accuracy improvement)
-Increased image resolution (180×180 → 224×224)
-Consistent architecture for fair model comparison
-Medical-appropriate evaluation metrics
+Fixed data leakage from original implementation.
+Proper two-phase transfer learning (20% accuracy improvement).
+Increased image resolution (180×180 → 224×224).
+Consistent architecture for fair model comparison.
+Medical-appropriate evaluation metrics.
 
-Future Enhancements
+**Future Enhancements**
 
  Implement Grad-CAM for model interpretability
  Ensemble multiple models for better performance
@@ -95,7 +97,7 @@ Future Enhancements
  Deploy as REST API for clinical integration
  Add confidence intervals for predictions
 
-References
+**References**
 
 Original Dataset: Kermany et al., 2018
 DenseNet: Huang et al., 2017
@@ -104,8 +106,8 @@ ResNet: He et al., 2015
 InceptionV3: Szegedy et al., 2015
 
 
-Acknowledgments:
+**Acknowledgments:**
 
-Dataset provided by Guangzhou Women and Children's Medical Center
-Kaggle for hosting the dataset and providing free GPU resources
-TensorFlow and Keras teams for excellent deep learning frameworks
+Dataset provided by Guangzhou Women and Children's Medical Center.
+Kaggle for hosting the dataset and providing free GPU resources.
+TensorFlow and Keras teams for excellent deep learning frameworks.
