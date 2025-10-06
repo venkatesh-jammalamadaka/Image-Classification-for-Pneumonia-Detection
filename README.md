@@ -20,7 +20,7 @@ Validation: 16 images (8 pneumonia, 8 normal)
 
 
 
-**Key Features**
+**Key Features:**
 
 Multiple CNN Architectures: Custom CNN, DenseNet121, VGG16, ResNet50, InceptionV3
 Transfer Learning: Two-phase training (freeze → fine-tune) for optimal performance
@@ -62,7 +62,7 @@ weight_pneumonia = 0.67
 Used 'Early Stopping' and 'Learning Rate Reduction'
 
 
-**Results Visualization**
+**Results Visualization:**
 
 The project generates:
 
@@ -80,7 +80,7 @@ Specificity: 89.74% means model correctly identifies 90% of normal cases
 23 False Negatives: Missed pneumonia cases (most critical error)
 24 False Positives: Unnecessary follow-ups (less critical)
 
-**Improvements Over Baseline**
+**Improvements Over Baseline:**
 
 Fixed data leakage from original implementation.
 Proper two-phase transfer learning (20% accuracy improvement).
@@ -88,16 +88,12 @@ Increased image resolution (180×180 → 224×224).
 Consistent architecture for fair model comparison.
 Medical-appropriate evaluation metrics.
 
-**Future Enhancements**
+**Future Enhancements:**
 
  Implement Grad-CAM for model interpretability
  Ensemble multiple models for better performance
- External validation on different hospital datasets
- Adjust decision threshold for higher sensitivity
- Deploy as REST API for clinical integration
- Add confidence intervals for predictions
 
-**References**
+**References:**
 
 Original Dataset: Kermany et al., 2018
 DenseNet: Huang et al., 2017
